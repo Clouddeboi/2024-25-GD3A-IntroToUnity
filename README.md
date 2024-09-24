@@ -9,7 +9,7 @@ elements (events, states, animation, input) for this module.
 - Add emojis with [gitmoji](https://gitmoji.dev/) to your Git commits to improve readability
 - Ignoring files and folders in your [gitignore](https://gist.github.com/jstnlvns/ebaa046fae16543cc9efc7f24bcd0e31) file
 - Adding [attributes](https://github.com/teebarjunk/Unity-Built-In-Attributes) in Unity
-- 
+
 ## Recommended Reading
 - See Moodle "Getting Started With Unity" topic for core reading
 - [Three Ways to Architect Your Game With Scriptableobjects](https://unity.com/how-to/architect-game-code-scriptable-objects)
