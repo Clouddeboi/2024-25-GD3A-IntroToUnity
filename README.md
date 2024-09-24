@@ -25,7 +25,7 @@ elements (events, states, animation, input) for this module.
 ### To Do - Week 3 - 4
 - [x] Add Editor tools (inspector lock, folder generation)
 - [ ] Scriptable Objects - Add a demo to demonstrate a centrally modified game variable
-- [ ] Discuss generic classes - see [Intro to C#](https://github.com/nmcguinness/2023_GD3_IntroToCSharp.git)
+- [ ] Discuss generic classes - see [Intro to C#](https://github.com/nmcguinness/2024_25---GD---CSharp---Intro.git)
 - [ ] Scriptable Objects - Add a local/remote reference variable demo
 - [ ] Scriptable Objects - Add a framework for interactable, consumable, game, and level data
 - [ ] Add a SimpleSelectionManager as a starting point to discuss Abstract Factory and Strategy patterns
