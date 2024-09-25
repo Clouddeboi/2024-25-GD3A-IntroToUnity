@@ -12,6 +12,8 @@ elements (events, states, animation, input) for this module.
 
 ## Recommended Reading
 - See Moodle "Getting Started With Unity" topic for core reading
+- [Better Data with Scriptable Objects in Unity!](https://www.youtube.com/watch?v=PVOVIxNxxeQ)
+- [Game architecture with ScriptableObjects](https://www.youtube.com/watch?v=WLDgtRNK2VE)
 - [Three Ways to Architect Your Game With Scriptableobjects](https://unity.com/how-to/architect-game-code-scriptable-objects)
 
 ## Additional Reading 
