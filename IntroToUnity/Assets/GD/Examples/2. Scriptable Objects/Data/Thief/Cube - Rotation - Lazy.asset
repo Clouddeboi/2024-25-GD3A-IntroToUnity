@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Cube - Rotation - Lazy
   m_EditorClassIdentifier: 
   description: Makes cube rotate lazily
-  value: 1
+  value: -0.5

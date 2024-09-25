@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Cube - Rotation - Fast
   m_EditorClassIdentifier: 
   description: Makes the cube rotate quickly!
-  value: 100
+  value: 0.12
