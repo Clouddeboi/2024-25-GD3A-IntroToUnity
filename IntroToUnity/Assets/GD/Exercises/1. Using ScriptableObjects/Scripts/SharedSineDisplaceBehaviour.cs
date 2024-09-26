@@ -23,12 +23,10 @@ public class SharedSineDisplaceBehaviour : MonoBehaviour
     [Tooltip("Min/max range of the movement (caution: 0 = no movement")]
     private FloatVariable amplitude;
 
-    //private FloatReference amplitude;
-
     //TODO - ALL - Replace float with FloatParameter, FloatVariable, FloatReference
 
     [SerializeField]
-    private Vector3 direction = Vector3.up;
+    private Vector3Reference direction;
 
     [SerializeField]
     [Range(0, 10)]
@@ -60,7 +58,7 @@ public class SharedSineDisplaceBehaviour : MonoBehaviour
         elapsedTimeSecs += Time.deltaTime;
         var displacement = amplitude.Value * Mathf.Sin(freqMultiplier * elapsedTimeSecs
             + GD.GDMathf.ToRadians(phaseAngleDegrees));
-        target.transform.position = originalPosition + direction * displacement;
+        target.transform.position = originalPosition + direction.Value * displacement;
     }
 
     //private float ToRadians(float degrees)
