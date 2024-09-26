@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace GD
 {
@@ -17,6 +16,18 @@ namespace GD
             if (angle < -360f) angle += 360f;
             if (angle > 360f) angle -= 360f;
             return Mathf.Clamp(angle, min, max);
+        }
+
+        /// <summary>
+        /// Converts degrees to radians
+        /// </summary>
+        /// <param name="degrees"></param>
+        /// <returns></returns>
+        public static float ToRadians(float degrees)
+        {
+            //return degrees * Mathf.Deg2Rad;
+            //180 degs = Mathf.PI
+            return Mathf.PI * degrees / 180f;
         }
     }
 }
