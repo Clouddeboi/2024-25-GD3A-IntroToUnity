@@ -1,6 +1,4 @@
 using GD.Selection;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -15,7 +13,7 @@ public class AdvancedSelectionManager : MonoBehaviour
     private ISelector selector;
 
     [SerializeField]
-    private ISelectionResponse reponse;
+    private ISelectionResponse response;
 
     private Transform currentSelection;
 
@@ -29,10 +27,23 @@ public class AdvancedSelectionManager : MonoBehaviour
         selector = GetComponent<ISelector>();
 
         //get a reponse
-        reponse = GetComponent<ISelectionResponse>();
+        response = GetComponent<ISelectionResponse>();
     }
 
     private void Update()
     {
+        //set de-selected
+        if (currentSelection != null)
+            response.OnDeselect(currentSelection);
+
+        //create/get ray
+        selector.Check(rayProvider.CreateRay());
+
+        //get current selection (cast ray, do tag comparison)
+        currentSelection = selector.GetSelection();
+
+        //set selected
+        if (currentSelection != null)
+            response.OnSelect(currentSelection);
     }
 }

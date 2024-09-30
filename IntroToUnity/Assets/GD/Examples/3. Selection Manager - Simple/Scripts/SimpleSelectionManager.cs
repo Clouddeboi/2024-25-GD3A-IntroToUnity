@@ -1,6 +1,8 @@
-using GD;
 using UnityEngine;
 
+/// <summary>
+/// Does this script follow the best principles of single responsibility (from SOLID)?
+/// </summary>
 public class SimpleSelectionManager : MonoBehaviour
 {
     [SerializeField]
@@ -10,6 +12,9 @@ public class SimpleSelectionManager : MonoBehaviour
 
     //local vars
     private Ray ray;
+
+    private Color oldColor;
+    private Transform oldSelection;
 
     private void Awake()
     {
@@ -35,8 +40,7 @@ public class SimpleSelectionManager : MonoBehaviour
             //did we hit something interesting?
             if (currentSelection.CompareTag(selectableTag))
             {
-                //change the moused over thing
-                Debug.Log(currentSelection.position.ToString());
+                //response
             }
         }
     }

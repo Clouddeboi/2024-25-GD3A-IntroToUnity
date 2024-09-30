@@ -131,9 +131,9 @@ GameObject:
   - component: {fileID: 158138836}
   - component: {fileID: 158138835}
   - component: {fileID: 158138834}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Capsule (1)
-  m_TagString: Ammo
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -425,9 +425,9 @@ GameObject:
   - component: {fileID: 254686615}
   - component: {fileID: 254686614}
   - component: {fileID: 254686613}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
-  m_TagString: Ammo
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -646,6 +646,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499312844}
+  - component: {fileID: 499312848}
+  - component: {fileID: 499312847}
+  - component: {fileID: 499312846}
+  - component: {fileID: 499312845}
   m_Layer: 0
   m_Name: AdvancedSelectionManager
   m_TagString: Untagged
@@ -668,6 +672,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1710373929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499312845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499312843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d2de42ed442ed44ad341347eb4576a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &499312846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499312843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276795655ead7ec49a7779e227a64839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedMaterial: {fileID: 2100000, guid: c5865e524b0e96b48bd0c9f308f75b12, type: 2}
+--- !u!114 &499312847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499312843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b075e154eae1a4ca94630f03513967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectableTag: Selectable
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  maxDistance: 100
+--- !u!114 &499312848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499312843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b790447134863a443bb1231332d17dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCamera: {fileID: 2035824724}
+  monoOrStereoscopicEye: 2
 --- !u!1 &840395017
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,9 +740,9 @@ GameObject:
   - component: {fileID: 840395021}
   - component: {fileID: 840395020}
   - component: {fileID: 840395019}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere
-  m_TagString: Ammo
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -785,7 +845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008979822}
   m_Layer: 0
-  m_Name: Pickables
+  m_Name: Pickups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,9 +1095,9 @@ GameObject:
   - component: {fileID: 1649313246}
   - component: {fileID: 1649313245}
   - component: {fileID: 1649313244}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Capsule
-  m_TagString: Ammo
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1132,6 +1192,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649313242}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1683483336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683483338}
+  - component: {fileID: 1683483337}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1683483337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683483336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 1f833ce0981bfc149b99670b42c6c9f8, type: 2}
+--- !u!4 &1683483338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683483336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2179265, y: -1.1020511, z: 7.9462724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710373928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,9 +1285,9 @@ GameObject:
   - component: {fileID: 1744463975}
   - component: {fileID: 1744463974}
   - component: {fileID: 1744463973}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Ammo
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1388,8 +1497,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -1850,3 +1959,4 @@ SceneRoots:
   - {fileID: 1133671283}
   - {fileID: 1008979822}
   - {fileID: 5191147664492475160}
+  - {fileID: 1683483338}
