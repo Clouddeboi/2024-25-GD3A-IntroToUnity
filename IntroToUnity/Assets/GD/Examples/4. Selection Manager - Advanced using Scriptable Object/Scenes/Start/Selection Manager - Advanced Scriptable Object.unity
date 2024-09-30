@@ -1708,10 +1708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a958af6b3e5db3478f40ae63f466146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretTransform: {fileID: 4797879513499283039}
-  gunTransform: {fileID: 1648791473}
-  turretRotationRate: 0
-  gunRotationRate: 0
 --- !u!1 &5322882385208931557
 GameObject:
   m_ObjectHideFlags: 0
