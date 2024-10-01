@@ -265,7 +265,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -437,15 +437,15 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.5
+  - screenRelativeHeight: 0.50017744
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 599425839}
-  - screenRelativeHeight: 0.25
+  - screenRelativeHeight: 0.25009364
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1197134833}
-  - screenRelativeHeight: 0.05
+  - screenRelativeHeight: 0.10169854
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 513193371}
@@ -468,6 +468,129 @@ Transform:
   - {fileID: 513193374}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &442842992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7465456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.0815458
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1368312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190043726845699179, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: globalScalePercentage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: enableGlobalFontScaling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[0].text
+      value: 'Example: Using LODGroup on a game object to reduce vertex count'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[1].text
+      value: '- Usage: Move camera to see different "levels of detail" over distance'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[2].text
+      value: '- Keywords: Level-of-detail (LOD), spatial aliasing'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[0].dimensions.x
+      value: 684.5714
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[0].dimensions.y
+      value: 14.571428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[1].dimensions.x
+      value: 677.4286
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[1].dimensions.y
+      value: 14.571428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[2].dimensions.x
+      value: 290.85715
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571190380861993430, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: prompts.Array.data[2].dimensions.y
+      value: 14.571428
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577621736917375309, guid: 2001136ed464dbc4aa058efd8a378861,
+        type: 3}
+      propertyPath: m_Name
+      value: Example Info
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2001136ed464dbc4aa058efd8a378861, type: 3}
 --- !u!1 &513193370
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +632,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e41a8c9e288a99c4daad55a67ba8e383, type: 2}
+  - {fileID: 2100000, guid: cecd477c1a710a74ca102441139a0cca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -618,7 +741,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cecd477c1a710a74ca102441139a0cca, type: 2}
+  - {fileID: 2100000, guid: e41a8c9e288a99c4daad55a67ba8e383, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -912,6 +1035,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 442842992}
   - {fileID: 185821619}
   - {fileID: 1107427629}
   - {fileID: 221598291}

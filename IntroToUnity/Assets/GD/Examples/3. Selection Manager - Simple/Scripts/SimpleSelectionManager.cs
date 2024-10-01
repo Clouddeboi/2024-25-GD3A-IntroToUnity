@@ -19,7 +19,7 @@ public class SimpleSelectionManager : MonoBehaviour
     private void Awake()
     {
         selectableTag = selectableTag.Trim();
-        mainCamera = Camera.main;
+        mainCamera = Camera.main; //cache
     }
 
     // Update is called once per frame
@@ -40,7 +40,8 @@ public class SimpleSelectionManager : MonoBehaviour
             //did we hit something interesting?
             if (currentSelection.CompareTag(selectableTag))
             {
-                //response
+                Debug.Log(currentSelection.transform.position);
+                //currentSelection.GetComponent<MeshRenderer>().material.color = Color.yellow;
             }
         }
     }
